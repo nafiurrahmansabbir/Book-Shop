@@ -15,7 +15,7 @@
     "description": "Follow Midoriya's journey to become the top hero.",
     "price": "$9.50",
     "image": "images/anime/my-hero-academia.png",
-    "category": "Shonen"
+    "category": "anime"
   },
   {
       "id":"3",
@@ -27,7 +27,7 @@
     "category": "anime"
   },
   {
-      "id":"4",
+    "id":"4",
     "title": "Jujutsu Kaisen Vol. 1",
     "author": "Gege Akutami",
     "description": "Cursed spirits threaten the world in this dark fantasy.",
@@ -36,12 +36,12 @@
     "category": "anime"
   },
   {
-      "id":"5",
+    "id":"5",
     "title": "One Piece Vol. 1",
     "author": "Eiichiro Oda",
     "description": "Join Luffy on his quest to become the Pirate King.",
     "price": "$12.00",
-    "image": "images/anime/one-piece.jpg",
+    "image": "images/books/book-6.png",
     "category": "anime"
   },
   {
@@ -59,8 +59,8 @@
     "author": "Tsugumi Ohba",
     "description": "A notebook gives Light Yagami deadly power.",
     "price": "$10.50",
-    "image": "images/anime/death-note.jpg",
-    "category": "anime"
+    "image": "images/books/book-7.png",
+    "category": "topBook"
   },
   {
       "id":"8",
@@ -68,16 +68,16 @@
     "author": "Sui Ishida",
     "description": "A college student becomes a half-ghoul in Tokyo.",
     "price": "$10.75",
-    "image": "images/anime/tokyo-ghoul.jpg",
-    "category": "Horror"
+   "image": "images/books/book-8.png",
+    "category": "topBook"
   },
   {
     "title": "Spy x Family Vol. 1",
     "author": "Tatsuya Endo",
     "description": "A spy forms a fake family for a secret mission.",
     "price": "$11.00",
-    "image": "images/anime/spy-x-family.jpg",
-    "category": "anime"
+    "image": "images/books/book-4.png",
+    "category": "topBook"
   },
   {
       "id":"9",
@@ -85,8 +85,8 @@
     "author": "Tatsuki Fujimoto",
     "description": "Denji hunts devils with his chainsaw powers.",
     "price": "$11.20",
-    "image": "images/anime/chainsaw-man.jpg",
-    "category": "anime"
+    "image": "images/books/book-6.png",
+    "category": "topBook"
   },
   {
         "id":"10",
@@ -94,7 +94,7 @@
     "author": "HERO & Daisuke Hagiwara",
     "description": "A sweet high school romance between two opposites.",
     "price": "$9.99",
-    "image": "images/anime/horimiya.jpg",
+    "image": "images/books/book-6.png",
     "category": "anime"
   },
   {
@@ -103,7 +103,7 @@
     "author": "Makoto Shinkai",
     "description": "Two teenagers mysteriously swap bodies across time.",
     "price": "$12.00",
-    "image": "images/anime/your-name.jpg",
+    "image": "images/books/book-4.png",
     "category": "topBook"
   },
   {
@@ -112,7 +112,7 @@
     "author": "Riichiro Inagaki",
     "description": "Science saves civilization after a global petrification event.",
     "price": "$10.25",
-        "image": "images/anime/aot.png",
+        "image": "images/books/book-1.png",
     "category": "topBook"
   },
   {
@@ -121,7 +121,7 @@
     "author": "Haruichi Furudate",
     "description": "Follow the journey of passionate volleyball players.",
     "price": "$9.75",
-      "image": "images/anime/aot.png",
+      "image": "images/books/book-2.png",
     "category": "topBook"
   },
   {
@@ -130,7 +130,16 @@
     "author": "Tsubasa Yamaguchi",
     "description": "A student discovers a passion for art.",
     "price": "$10.00",
-        "image": "images/anime/aot.png",
+    "image": "images/books/book-3.png",
+    "category": "topBook"
+  },
+  {
+      "id":"11",
+    "title": "Your Name",
+    "author": "Makoto Shinkai",
+    "description": "Two teenagers mysteriously swap bodies across time.",
+    "price": "$12.00",
+    "image": "images/books/book-4.png",
     "category": "topBook"
   }
 ]
