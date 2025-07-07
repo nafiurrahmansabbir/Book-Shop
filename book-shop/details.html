@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-blue-600">📚 BookNest</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        </div>
+
+        <!-- Cart & Mobile Menu -->
+        <div class="flex items-center space-x-4">
+          <button class="relative text-gray-600 hover:text-blue-600">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.6 8m10.6-8l1.6 8M9 21h6" />
+            </svg>
+            <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">2</span>
+          </button>
+          <button id="menu-btn" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Shop</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">About</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+    </div>
+  </nav>
+
+<!-- Product Detail / Book Card -->
+<section class="bg-white py-16 py-10">
+  <div class="max-w-6xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row gap-12" id="detailsContainer">
+    <p class="text-center w-full text-gray-500">Loading...</p>
+  </div>
+</section>
+
+  <footer class="footer bg-base-300 text-base-content p-10">
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Social</h6>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </footer>
+
+<!-- Tiny quantity stepper script -->
+<script>
+  const decr = () => {
+    let v = parseInt(document.getElementById('qty-input').value, 10);
+    if (v > 1) document.getElementById('qty-input').value = v - 1;
+  };
+  const incr = () => {
+    let v = parseInt(document.getElementById('qty-input').value, 10);
+    document.getElementById('qty-input').value = v + 1;
+  };
+</script>
+
+<!-- Dynamic Data Load -->
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  fetch('./public/allbooks.json')
+    .then(res => res.json())
+    .then(data => {
+      const book = data.find(b => b.id === id);
+
+      if (!book) {
+        document.getElementById('detailsContainer').innerHTML = '<p class="text-red-500">Manga not found.</p>';
+        return;
+      }
+
+      document.getElementById('detailsContainer').innerHTML = `
+        <!-- Cover Image -->
+        <div class="md:w-1/2 flex flex-col items-center">
+          <img src="${book.image}" alt="${book.title}" class="w-full max-w-xs rounded shadow-md" />
+          <div class="mt-6 flex space-x-3">
+            <span class="w-3 h-3 rounded-full border-2 border-gray-900"></span>
+            <span class="w-3 h-3 rounded-full bg-gray-300"></span>
+          </div>
+        </div>
+
+        <!-- Details / Actions -->
+        <div class="md:flex-1 md:pt-4">
+          <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">${book.title}</h1>
+          <p class="text-sm text-gray-600 mb-6">
+            <span class="font-medium">By (author)</span>
+            <span class="ml-1 text-gray-800">${book.author}</span>
+          </p>
+          <p class="text-2xl font-semibold text-gray-900 mb-6">${book.price}</p>
+          <p class="text-gray-700 leading-relaxed mb-8 max-w-prose">${book.description}</p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+            <div class="flex items-center border border-gray-300 rounded">
+              <button onclick="decr()" class="px-4 py-3 text-xl font-semibold hover:bg-gray-50 select-none">−</button>
+              <input id="qty-input" type="text" value="1" readonly class="w-12 text-center bg-transparent text-lg focus:outline-none" />
+              <button onclick="incr()" class="px-4 py-3 text-xl font-semibold hover:bg-gray-50 select-none">+</button>
+            </div>
+            <button class="flex-1 inline-flex justify-center items-center bg-gray-900 hover:bg-gray-800 text-white font-medium rounded px-8 py-4 transition">
+              Add to cart
+            </button>
+          </div>
+
+          
+        </div>
+      `;
+    })
+    .catch(err => {
+      document.getElementById('detailsContainer').innerHTML = '<p class="text-red-500">Error loading data.</p>';
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>

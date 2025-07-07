@@ -1,44 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <!-- tailwind -->
-      <script src="https://cdn.tailwindcss.com"></script>
-<!--  -->
-<!-- bottstap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<!--  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookNest</title>
 
-     
+  <!-- Tailwind CSS with DaisyUI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body >
 
-    <!-- Nav-Bar Section -->
-  <section>
-    <nav class="bg-white shadow-md">
+<body class="bg-gray-50">
+
+  <!-- Nav-Bar Section -->
+  <nav class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
-        
         <!-- Logo -->
         <div class="flex items-center">
           <span class="text-2xl font-bold text-blue-600">📚 BookNest</span>
         </div>
 
-        <!-- Navigation Links (Desktop) -->
+        <!-- Navigation Links -->
         <div class="hidden md:flex space-x-8">
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="allmanga.html" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
           <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
           <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
           <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
         </div>
 
-        <!-- Cart and Mobile Menu Button -->
+        <!-- Cart & Mobile Menu -->
         <div class="flex items-center space-x-4">
-          <!-- Cart Button -->
           <button class="relative text-gray-600 hover:text-blue-600">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -46,12 +40,9 @@
             </svg>
             <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">2</span>
           </button>
-
-          <!-- Mobile Menu Toggle -->
           <button id="menu-btn" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
@@ -60,247 +51,272 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
+      <a href="index.html" class="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
       <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Shop</a>
       <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Categories</a>
       <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">About</a>
       <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Contact</a>
     </div>
   </nav>
+
+  <!-- Carousel Section -->
+  <section class="bg-gradient-to-br from-pink-100 via-pink-50 to-pink-200 py-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
+
+      <!-- Text Side -->
+      <div class="max-w-xl text-center lg:text-left">
+        <p class="uppercase text-sm  font-semibold text-gray-400 mb-2">
+          The Bookworm Editors’
+        </p>
+        <h2 class="text-2xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 ">
+          Featured Books of the <br>
+          <span class="text-3xl sm:text-6xl lg:text-6xl block mt-2">February</span>
+        </h2>
+        <a href="#" class="mt-8 btn btn-outline ">
+          See More
+        </a>
+      </div>
+
+      <!-- Book Cover Fan Layout -->
+      <div class="">
+        <img src="./img/img1-12.png" alt="loading">
+
+
+
+      </div>
   </section>
-  <!-- end nav -->
 
-  <!-- carusol by bootstap -->
 
-<section class="h-[400px] overflow-hidden">
-  <div id="carouselExampleCaptions" class="carousel slide h-full" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+  <!-- top book  Section -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold text-center mb-6">Top Book</h2>
+    <div id="topbookGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
+
+    <div class="text-center mt-8">
+      <a href="/book-shop/allt_top_book.html">
+        <button class="btn btn-outline  ">See More </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Manga Section -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold text-center mb-6">Manga for Anime Lovers</h2>
+    <div id="mangaGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
+
+    <div class="text-center mt-8">
+      <a href="/book-shop/allmanga.html">
+        <button class="btn btn-outline ">See More </button>
+      </a>
+    </div>
+  </section>
+
+  <!-- categories -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+
+    <h2 class="text-2xl font-semibold text-center my-10 text-gray-900">Featured Categories</h2>
+
     </div>
 
-    <div class="carousel-inner h-full">
-      <div class="carousel-item active h-full">
-        <img src="images/letter-bg.jpg" class="d-block w-100 h-full object-cover"
-          alt="Books">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First Slide Title</h5>
-          <p>This is a description for the first slide.</p>
-        </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <!-- Card 1 -->
+      <div class="bg-purple-50 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+        <img src="/images/arts.png" alt="Arts & Photography" class="w-10 h-10 mb-3" />
+        <h3 class="font-semibold text-gray-900">Arts & Photography</h3>
+        <p class="text-sm text-gray-600">Shop Now</p>
       </div>
-      <div class="carousel-item h-full">
-        <img src="img/books.jpg" class="d-block w-100 h-full object-cover"
-          alt="Library">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second Slide Title</h5>
-          <p>This is a description for the second slide.</p>
-        </div>
+
+      <!-- Card 2 -->
+      <div class="bg-orange-50 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+        <img src="/images/food.png" alt="Food & Drink" class="w-10 h-10 mb-3" />
+        <h3 class="font-semibold text-gray-900">Food & Drink</h3>
+        <p class="text-sm text-gray-600">Shop Now</p>
       </div>
-      <div class="carousel-item h-full">
-        <img src="img/books.jpg" class="d-block w-100 h-full object-cover"
-          alt="Reading">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third Slide Title</h5>
-          <p>This is a description for the third slide.</p>
-        </div>
+
+      <!-- Card 3 -->
+      <div class="bg-rose-50 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+        <img src="/images/romance.png" alt="Romance" class="w-10 h-10 mb-3" />
+        <h3 class="font-semibold text-gray-900">Romance</h3>
+        <p class="text-sm text-gray-600">Shop Now</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-cyan-50 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+        <img src="/images/health.png" alt="Health" class="w-10 h-10 mb-3" />
+        <h3 class="font-semibold text-gray-900">Health</h3>
+        <p class="text-sm text-gray-600">Shop Now</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-red-50 rounded-lg p-4 flex flex-col items-center text-center shadow-sm">
+        <img src="/images/biography.png" alt="Biography" class="w-10 h-10 mb-3" />
+        <h3 class="font-semibold text-gray-900">Biography</h3>
+        <p class="text-sm text-gray-600">Shop Now</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Favorite Authors -->
+
+
+  <section class="max-w-7xl mx-auto px-4 py-8">
+
+    <h2 class="text-2xl text-center font-semibold my-6">Favorite Authors</h2>
+
+    <!-- Authors list -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 justify-center items-center space-x-6 px-10">
+      <!-- Author card -->
+      <div class="flex flex-col items-center min-w-[120px]">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-24 h-24 object-cover rounded-full mb-2" />
+        <h3 class="text-sm font-semibold text-center">A G Riddle</h3>
+        <p class="text-xs text-gray-500 text-center">3 Published Books</p>
+      </div>
+
+      <div class="flex flex-col items-center min-w-[120px]">
+        <img src="https://randomuser.me/api/portraits/men/56.jpg" class="w-24 h-24 object-cover rounded-full mb-2" />
+        <h3 class="text-sm font-semibold text-center">Anna Burns</h3>
+        <p class="text-xs text-gray-500 text-center">2 Published Books</p>
+      </div>
+      <div class="flex flex-col items-center min-w-[120px]">
+        <img src="https://randomuser.me/api/portraits/women/8.jpg" class="w-24 h-24 object-cover rounded-full mb-2" />
+        <h3 class="text-sm font-semibold text-center">Ashlee Vance</h3>
+        <p class="text-xs text-gray-500 text-center">2 Published Books</p>
+      </div>
+      <div class="flex flex-col items-center min-w-[120px]">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-24 h-24 object-cover rounded-full mb-2" />
+        <h3 class="text-sm font-semibold text-center">A G Riddle</h3>
+        <p class="text-xs text-gray-500 text-center">3 Published Books</p>
+      </div>
+      <div class="flex flex-col items-center min-w-[120px]">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-24 h-24 object-cover rounded-full mb-2" />
+        <h3 class="text-sm font-semibold text-center">Andre Aciman</h3>
+        <p class="text-xs text-gray-500 text-center">2 Published Books</p>
       </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
+
+  </section>
+
+
+  <!-- blog section -->
+
+  <section class="px-6 py-10 max-w-7xl mx-auto">
+
+    <h2 class="text-3xl font-semibold my-10 text-center text-gray-800">Latest News</h2>
 
 
 
-
-  <!-- end carusol -->
-
-  <section class="container my-5">
-    <h2 class="text-center mb-4">Our Top Books</h2>
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="images/book-1.png" class="card-img-top" alt="Book 1">
-                <div class="card-body">
-                    <h5 class="card-title">The Great Adventure</h5>
-                    <p class="card-text text-muted">By John Doe</p>
-                    <p class="card-text">An epic tale of courage and discovery across vast lands.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="fw-bold fs-5 text-primary">$19.99</span>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/400x200?text=Open+Book" alt="Open Book" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <p class="text-sm text-gray-500 mb-1">19 Aug, 2020 &nbsp; • &nbsp; 2 Comments</p>
+          <h3 class="text-lg font-semibold text-gray-800">Benefits of Reading: Getting Smart, Thin, Healthy, Happy</h3>
         </div>
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="images/book-2.png" class="card-img-top" alt="Book 2">
-                <div class="card-body">
-                    <h5 class="card-title">Mystery of the Old House</h5>
-                    <p class="card-text text-muted">By Jane Smith</p>
-                    <p class="card-text">A thrilling mystery that will keep you guessing until the very end.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="fw-bold fs-5 text-primary">$15.50</span>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="images/book-3.png" class="card-img-top" alt="Book 3">
-                <div class="card-body">
-                    <h5 class="card-title">Coding for Beginners</h5>
-                    <p class="card-text text-muted">By Alex Coder</p>
-                    <p class="card-text">Learn the basics of programming with this easy-to-follow guide.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="fw-bold fs-5 text-primary">$25.00</span>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <img src="images/book-4.png" class="card-img-top" alt="Book 4">
-                <div class="card-body">
-                    <h5 class="card-title">The Art of Cooking</h5>
-                    <p class="card-text text-muted">By Chef Julia</p>
-                    <p class="card-text">Master culinary skills with delicious recipes and techniques.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="fw-bold fs-5 text-primary">$22.75</span>
-                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-              <img src="images/book-5.png" class="card-img-top" alt="Book 2">
-              <div class="card-body">
-                  <h5 class="card-title">Mystery of the Old House</h5>
-                  <p class="card-text text-muted">By Jane Smith</p>
-                  <p class="card-text">A thrilling mystery that will keep you guessing until the very end.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold fs-5 text-primary">$15.50</span>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                  </div>
-              </div>
-          </div>
       </div>
 
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/400x200?text=Reading+Woman" alt="Woman Reading"
+          class="w-full h-48 object-cover">
+        <div class="p-4">
+          <p class="text-sm text-gray-500 mb-1">19 Aug, 2020 &nbsp; • &nbsp; 2 Comments</p>
+          <h3 class="text-lg font-semibold text-gray-800">Anne Bogel’s 5 Tips to Restore Your Love of Reading</h3>
+        </div>
+      </div>
 
-
-      
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/400x200?text=Library+Lounge" alt="Library Lounge"
+          class="w-full h-48 object-cover">
+        <div class="p-4">
+          <p class="text-sm text-gray-500 mb-1">19 Aug, 2020 &nbsp; • &nbsp; 2 Comments</p>
+          <h3 class="text-lg font-semibold text-gray-800">‘American Dirt’ Invites Readers into the Journey of Mexico...
+          </h3>
+        </div>
+      </div>
     </div>
-    
+  </section>
 
-    <div class="text-center mt-4">
-        <a href="#" class="btn btn-outline-primary btn-lg">See More Books</a>
+
+  <hr class="text-gray-100 my-10">
+
+  <!-- subscribe -->
+  <section class="my-10 py-12">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-4xl font-semibold mb-2">Join Our Newsletter</h2>
+      <p class="text-gray-600 mb-6">
+        Signup to be the first to hear about exclusive deals, special offers and upcoming collections
+      </p>
+
+      <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <input type="email" placeholder="Enter email for weekly newsletter."
+          class="border border-gray-400 px-4 py-3 w-full sm:w-[400px] focus:outline-none focus:ring-2 focus:ring-black" />
+        <button type="submit" class="bg-black text-white px-6 py-3 font-semibold hover:bg-gray-800 transition">
+          Subscribe
+        </button>
+      </form>
     </div>
-</section>
+  </section>
 
-
-
-
-
-
-<section class="container my-5">
-  <h2 class="text-center mb-4">Manga for Anime Lovers</h2>
-  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
-      <div class="col">
-          <div class="card h-100 shadow-sm">
-              <img src="images/anime/aot.png" class="card-img-top" alt="Manga 1">
-              <div class="card-body">
-                  <h5 class="card-title">Attack on Titan Vol. 1</h5>
-                  <p class="card-text text-muted">By Hajime Isayama</p>
-                  <p class="card-text">Dive into a world where humanity fights for survival against gigantic humanoids.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold fs-5 text-primary">$10.99</span>
-                      <a href="#" class="btn btn-primary">View Manga</a>
-                  </div>
-              </div>
-          </div>
+  <!-- footer -->
+  <footer class="footer bg-base-300 text-base-content p-10">
+    <nav>
+      <h6 class="footer-title">Services</h6>
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Social</h6>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
       </div>
-      <div class="col">
-          <div class="card h-100 shadow-sm">
-              <img src="images/anime/my-hero-academia.png" class="card-img-top" alt="Manga 2">
-              <div class="card-body">
-                  <h5 class="card-title">My Hero Academia Vol. 1</h5>
-                  <p class="card-text text-muted">By Kohei Horikoshi</p>
-                  <p class="card-text">Follow Izuku Midoriya's journey to become the greatest hero.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold fs-5 text-primary">$9.50</span>
-                      <a href="#" class="btn btn-primary">View Manga</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col">
-          <div class="card h-100 shadow-sm">
-              <img src="images/anime/demon-slayer-infinity.jpeg" class="card-img-top" alt="Manga 3">
-              <div class="card-body">
-                  <h5 class="card-title">Demon Slayer Vol. 1</h5>
-                  <p class="card-text text-muted">By Koyoharu Gotouge</p>
-                  <p class="card-text">Join Tanjiro on his quest to avenge his family and cure his sister.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold fs-5 text-primary">$11.25</span>
-                      <a href="#" class="btn btn-primary">View Manga</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col">
-          <div class="card h-100 shadow-sm">
-              <img src="images/anime/jjk.jpg" class="card-img-top" alt="Manga 4">
-              <div class="card-body">
-                  <h5 class="card-title">Jujutsu Kaisen Vol. 1</h5>
-                  <p class="card-text text-muted">By Gege Akutami</p>
-                  <p class="card-text">Enter a dark fantasy world of curses and sorcerers.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                      <span class="fw-bold fs-5 text-primary">$10.00</span>
-                      <a href="#" class="btn btn-primary">View Manga</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-            <img src="images/anime/demon-slayer-infinity.jpeg" class="card-img-top" alt="Manga 3">
-            <div class="card-body">
-                <h5 class="card-title">Demon Slayer Vol. 1</h5>
-                <p class="card-text text-muted">By Koyoharu Gotouge</p>
-                <p class="card-text">Join Tanjiro on his quest to avenge his family and cure his sister.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="fw-bold fs-5 text-primary">$11.25</span>
-                    <a href="#" class="btn btn-primary">View Manga</a>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
+    </nav>
+  </footer>
 
-  <div class="text-center mt-4">
-      <a href="#" class="btn btn-outline-primary btn-lg">See More Manga</a>
-  </div>
-</section>
 
-  <!-- JS -->
+
+
+  <!-- Mobile Menu Toggle Script -->
   <script src="script.js"></script>
+
 </body>
 
 </html>

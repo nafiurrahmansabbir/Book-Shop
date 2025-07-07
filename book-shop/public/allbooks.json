@@ -1,0 +1,136 @@
+[
+  {
+    "id":"1",
+    "title": "Attack on Titan Vol. 1",
+    "author": "Hajime Isayama",
+    "description": "Humanity fights for survival against gigantic humanoids.",
+    "price": "$10.99",
+    "image": "images/anime/aot.png",
+    "category": "anime"
+  },
+  {
+      "id":"2",
+    "title": "My Hero Academia Vol. 1",
+    "author": "Kohei Horikoshi",
+    "description": "Follow Midoriya's journey to become the top hero.",
+    "price": "$9.50",
+    "image": "images/anime/my-hero-academia.png",
+    "category": "Shonen"
+  },
+  {
+      "id":"3",
+    "title": "Demon Slayer Vol. 1",
+    "author": "Koyoharu Gotouge",
+    "description": "Tanjiro must protect his sister and defeat demons.",
+    "price": "$11.25",
+    "image": "images/anime/demon-slayer-infinity.jpeg",
+    "category": "anime"
+  },
+  {
+      "id":"4",
+    "title": "Jujutsu Kaisen Vol. 1",
+    "author": "Gege Akutami",
+    "description": "Cursed spirits threaten the world in this dark fantasy.",
+    "price": "$10.00",
+    "image": "images/anime/jjk.jpg",
+    "category": "anime"
+  },
+  {
+      "id":"5",
+    "title": "One Piece Vol. 1",
+    "author": "Eiichiro Oda",
+    "description": "Join Luffy on his quest to become the Pirate King.",
+    "price": "$12.00",
+    "image": "images/anime/one-piece.jpg",
+    "category": "anime"
+  },
+  {
+       "id":"6",
+    "title": "Naruto Vol. 1",
+    "author": "Masashi Kishimoto",
+    "description": "A ninja's journey from outcast to hero begins here.",
+    "price": "$9.99",
+    "image": "images/anime/naruto.jpg",
+    "category": "anime"
+  },
+  {
+       "id":"7",
+    "title": "Death Note Vol. 1",
+    "author": "Tsugumi Ohba",
+    "description": "A notebook gives Light Yagami deadly power.",
+    "price": "$10.50",
+    "image": "images/anime/death-note.jpg",
+    "category": "anime"
+  },
+  {
+      "id":"8",
+    "title": "Tokyo Ghoul Vol. 1",
+    "author": "Sui Ishida",
+    "description": "A college student becomes a half-ghoul in Tokyo.",
+    "price": "$10.75",
+    "image": "images/anime/tokyo-ghoul.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Spy x Family Vol. 1",
+    "author": "Tatsuya Endo",
+    "description": "A spy forms a fake family for a secret mission.",
+    "price": "$11.00",
+    "image": "images/anime/spy-x-family.jpg",
+    "category": "anime"
+  },
+  {
+      "id":"9",
+    "title": "Chainsaw Man Vol. 1",
+    "author": "Tatsuki Fujimoto",
+    "description": "Denji hunts devils with his chainsaw powers.",
+    "price": "$11.20",
+    "image": "images/anime/chainsaw-man.jpg",
+    "category": "anime"
+  },
+  {
+        "id":"10",
+    "title": "Horimiya Vol. 1",
+    "author": "HERO & Daisuke Hagiwara",
+    "description": "A sweet high school romance between two opposites.",
+    "price": "$9.99",
+    "image": "images/anime/horimiya.jpg",
+    "category": "anime"
+  },
+  {
+      "id":"11",
+    "title": "Your Name",
+    "author": "Makoto Shinkai",
+    "description": "Two teenagers mysteriously swap bodies across time.",
+    "price": "$12.00",
+    "image": "images/anime/your-name.jpg",
+    "category": "topBook"
+  },
+  {
+        "id":"12",
+    "title": "Dr. Stone Vol. 1",
+    "author": "Riichiro Inagaki",
+    "description": "Science saves civilization after a global petrification event.",
+    "price": "$10.25",
+        "image": "images/anime/aot.png",
+    "category": "topBook"
+  },
+  {
+       "id":"13",
+    "title": "Haikyuu!! Vol. 1",
+    "author": "Haruichi Furudate",
+    "description": "Follow the journey of passionate volleyball players.",
+    "price": "$9.75",
+      "image": "images/anime/aot.png",
+    "category": "topBook"
+  },
+  {
+      "id":"14",
+    "title": "Blue Period Vol. 1",
+    "author": "Tsubasa Yamaguchi",
+    "description": "A student discovers a passion for art.",
+    "price": "$10.00",
+        "image": "images/anime/aot.png",
+    "category": "topBook"
+  }
+]
