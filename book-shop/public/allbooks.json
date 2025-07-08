@@ -1,6 +1,6 @@
 [
   {
-    "id":"1",
+    "id": "1",
     "title": "Attack on Titan Vol. 1",
     "author": "Hajime Isayama",
     "description": "Humanity fights for survival against gigantic humanoids.",
@@ -9,7 +9,7 @@
     "category": "anime"
   },
   {
-      "id":"2",
+    "id": "2",
     "title": "My Hero Academia Vol. 1",
     "author": "Kohei Horikoshi",
     "description": "Follow Midoriya's journey to become the top hero.",
@@ -18,7 +18,7 @@
     "category": "anime"
   },
   {
-      "id":"3",
+    "id": "3",
     "title": "Demon Slayer Vol. 1",
     "author": "Koyoharu Gotouge",
     "description": "Tanjiro must protect his sister and defeat demons.",
@@ -27,7 +27,7 @@
     "category": "anime"
   },
   {
-    "id":"4",
+    "id": "4",
     "title": "Jujutsu Kaisen Vol. 1",
     "author": "Gege Akutami",
     "description": "Cursed spirits threaten the world in this dark fantasy.",
@@ -36,16 +36,16 @@
     "category": "anime"
   },
   {
-    "id":"5",
+    "id": "5",
     "title": "One Piece Vol. 1",
     "author": "Eiichiro Oda",
     "description": "Join Luffy on his quest to become the Pirate King.",
     "price": "$12.00",
-    "image": "images/books/book-6.png",
+    "image": "images/anime/onepiece.jpg",
     "category": "anime"
   },
   {
-       "id":"6",
+    "id": "6",
     "title": "Naruto Vol. 1",
     "author": "Masashi Kishimoto",
     "description": "A ninja's journey from outcast to hero begins here.",
@@ -54,7 +54,7 @@
     "category": "anime"
   },
   {
-       "id":"7",
+    "id": "7",
     "title": "Death Note Vol. 1",
     "author": "Tsugumi Ohba",
     "description": "A notebook gives Light Yagami deadly power.",
@@ -63,24 +63,16 @@
     "category": "topBook"
   },
   {
-      "id":"8",
+    "id": "8",
     "title": "Tokyo Ghoul Vol. 1",
     "author": "Sui Ishida",
     "description": "A college student becomes a half-ghoul in Tokyo.",
     "price": "$10.75",
-   "image": "images/books/book-8.png",
+    "image": "images/books/book-8.png",
     "category": "topBook"
   },
   {
-    "title": "Spy x Family Vol. 1",
-    "author": "Tatsuya Endo",
-    "description": "A spy forms a fake family for a secret mission.",
-    "price": "$11.00",
-    "image": "images/books/book-4.png",
-    "category": "topBook"
-  },
-  {
-      "id":"9",
+    "id": "9",
     "title": "Chainsaw Man Vol. 1",
     "author": "Tatsuki Fujimoto",
     "description": "Denji hunts devils with his chainsaw powers.",
@@ -89,16 +81,16 @@
     "category": "topBook"
   },
   {
-        "id":"10",
+    "id": "10",
     "title": "Horimiya Vol. 1",
     "author": "HERO & Daisuke Hagiwara",
     "description": "A sweet high school romance between two opposites.",
     "price": "$9.99",
-    "image": "images/books/book-6.png",
+    "image": "images/anime/horimiya.jpg",
     "category": "anime"
   },
   {
-      "id":"11",
+    "id": "11",
     "title": "Your Name",
     "author": "Makoto Shinkai",
     "description": "Two teenagers mysteriously swap bodies across time.",
@@ -107,25 +99,25 @@
     "category": "topBook"
   },
   {
-        "id":"12",
+    "id": "12",
     "title": "Dr. Stone Vol. 1",
     "author": "Riichiro Inagaki",
     "description": "Science saves civilization after a global petrification event.",
     "price": "$10.25",
-        "image": "images/books/book-1.png",
+    "image": "images/books/book-1.png",
     "category": "topBook"
   },
   {
-       "id":"13",
+    "id": "13",
     "title": "Haikyuu!! Vol. 1",
     "author": "Haruichi Furudate",
     "description": "Follow the journey of passionate volleyball players.",
     "price": "$9.75",
-      "image": "images/books/book-2.png",
+    "image": "images/books/book-2.png",
     "category": "topBook"
   },
   {
-      "id":"14",
+    "id": "14",
     "title": "Blue Period Vol. 1",
     "author": "Tsubasa Yamaguchi",
     "description": "A student discovers a passion for art.",
@@ -134,12 +126,48 @@
     "category": "topBook"
   },
   {
-      "id":"11",
-    "title": "Your Name",
-    "author": "Makoto Shinkai",
-    "description": "Two teenagers mysteriously swap bodies across time.",
-    "price": "$12.00",
-    "image": "images/books/book-4.png",
-    "category": "topBook"
+    "id": "15",
+    "title": "Towards Understanding Islam",
+    "author": "Syed Abul A'la Maududi",
+    "description": "An introductory guide to the basic teachings of Islam in a clear and simple way.",
+    "price": "$5.00",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1250658084i/471172.jpg",
+    "category": "islamic"
+  },
+  {
+    "id": "16",
+    "title": "Riyad-us-Saliheen",
+    "author": "Imam An-Nawawi",
+    "description": "A compilation of authentic Hadiths covering all aspects of Islamic life.",
+    "price": "$8.50",
+    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1245500015i/507739.jpg",
+    "category": "islamic"
+  },
+  {
+    "id": "17",
+    "title": "Tafsir Ibn Kathir (Abridged)",
+    "author": "Ibn Kathir",
+    "description": "A classical explanation of the meanings and context of the Holy Qur'an.",
+    "price": "$15.00",
+    "image": "https://adviceforparadise.com/media/bookseries-pic/Tafsir_Ibn_Kathir.png",
+    "category": "islamic"
+  },
+  {
+    "id": "18",
+    "title": "La Tahzan (Don't Be Sad)",
+    "author": "Dr. Aaidh al-Qarni",
+    "description": "A motivational Islamic book that offers spiritual advice for a better life.",
+    "price": "$6.75",
+    "image": "https://img.drz.lazcdn.com/static/bd/p/06c60ed900d2081b1645984793ba10df.png_720x720q80.png",
+    "category": "islamic"
+  },
+  {
+    "id": "19",
+    "title": "Stories of the Prophets",
+    "author": "Ibn Kathir",
+    "description": "Well-researched and detailed stories of the Prophets based on Islamic sources.",
+    "price": "$7.00",
+    "image": "https://iiph.com/wp-content/uploads/2024/12/Stories-of-the-Prophets-cover-for-sit.jpg",
+    "category": "islamic"
   }
 ]

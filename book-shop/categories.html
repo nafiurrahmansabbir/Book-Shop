@@ -14,7 +14,7 @@
 
 
 <body class="bg-gray-100">
-  <!-- Nav-Bar Section -->
+    <!-- Nav-Bar Section -->
   <nav class="bg-white shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16 items-center">
@@ -81,8 +81,8 @@
         .then(data => {
 
             const container = document.getElementById('allmangaGridshow');
-            const allManga = data.filter(book => book.category === "anime");
-            container.innerHTML = allManga.map(manga => `
+
+            container.innerHTML = data.map(manga => `
       <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
         <img src="${manga.image}" alt="${manga.title}" class="h-48 object-contain mb-4" />
         <h3 class="font-semibold text-lg">${manga.title}</h3>

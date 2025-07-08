@@ -9,6 +9,10 @@
   <!-- Tailwind CSS with DaisyUI -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<style>
+  
+</style>
+
 </head>
 
 <body class="bg-gray-50">
@@ -26,8 +30,8 @@
         <div class="hidden md:flex space-x-8">
           <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
           <a href="allmanga.html" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="categories.html" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
           <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
         </div>
 
@@ -53,38 +57,90 @@
     <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
       <a href="index.html" class="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
       <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Shop</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Categories</a>
-      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">About</a>
+      <a href="categories.html" class="block text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+      <a href="about.html" class="block text-gray-700 hover:text-blue-600 font-medium">About</a>
       <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Contact</a>
     </div>
   </nav>
+  <!-- end nav -->
+
+
+<!-- Carousel -->
+
+
+<div class="mt-8 flex flex-col items-center justify-center w-full">
+ <div class="flex flex-col items-center justify-center w-full">
 
   <!-- Carousel Section -->
-  <section class="bg-gradient-to-br from-pink-100 via-pink-50 to-pink-200 py-20">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
-
-      <!-- Text Side -->
-      <div class="max-w-xl text-center lg:text-left">
-        <p class="uppercase text-sm  font-semibold text-gray-400 mb-2">
-          The Bookworm Editors’
-        </p>
-        <h2 class="text-2xl sm:text-5xl lg:text-6xl font-semibold text-gray-900 ">
-          Featured Books of the <br>
-          <span class="text-3xl sm:text-6xl lg:text-6xl block mt-2">February</span>
-        </h2>
-        <a href="#" class="mt-8 btn btn-outline ">
-          See More
-        </a>
+  <div class="carousel w-full md:w-4/5 rounded-md shadow-md">
+    <!-- Slide 1 -->
+    <div id="item1" class="carousel-item w-full">
+      <div class="flex flex-col md:flex-row items-center bg-white w-full p-3 gap-3">
+        <img src="images/books/book-1.png" class="w-2/3 md:w-1/5 rounded-md" />
+        <div class="md:w-4/5 space-y-2 text-center md:text-left">
+          <h2 class="text-lg font-semibold text-gray-800">The Silent Library</h2>
+          <p class="text-sm text-gray-600">
+            Dive into a mystery set inside a forgotten library where each book tells a tale of secrets.
+          </p>
+          <button class="btn btn-sm btn-primary">Read More</button>
+        </div>
       </div>
+    </div>
 
-      <!-- Book Cover Fan Layout -->
-      <div class="">
-        <img src="./img/img1-12.png" alt="loading">
-
-
-
+    <!-- Slide 2 -->
+    <div id="item2" class="carousel-item w-full">
+      <div class="flex flex-col md:flex-row items-center bg-white w-full p-3 gap-3">
+        <img src="images/books/book-2.png" class="w-2/3 md:w-1/5 rounded-md" />
+        <div class="md:w-4/5 space-y-2 text-center md:text-left">
+          <h2 class="text-lg font-semibold text-gray-800">Whispers of the Forest</h2>
+          <p class="text-sm text-gray-600">
+            A beautiful novel that captures the sounds, stories, and spirits of the deep woods.
+          </p>
+          <button class="btn btn-sm btn-primary">Explore</button>
+        </div>
       </div>
-  </section>
+    </div>
+
+    <!-- Slide 3 -->
+    <div id="item3" class="carousel-item w-full">
+      <div class="flex flex-col md:flex-row items-center bg-white w-full p-3 gap-3">
+        <img src="images/books/book-3.png" class="w-2/3 md:w-1/5 rounded-md" />
+        <div class="md:w-4/5 space-y-2 text-center md:text-left">
+          <h2 class="text-lg font-semibold text-gray-800">Memoirs of a Wanderer</h2>
+          <p class="text-sm text-gray-600">
+            A touching memoir of journeys across continents, cultures, and challenges.
+          </p>
+          <button class="btn btn-sm btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div id="item4" class="carousel-item w-full">
+      <div class="flex flex-col md:flex-row items-center bg-white w-full p-3 gap-3">
+        <img src="images/books/book-4.png" class="w-2/3 md:w-1/5 rounded-md" />
+        <div class="md:w-4/5 space-y-2 text-center md:text-left">
+          <h2 class="text-lg font-semibold text-gray-800">The Future Begins</h2>
+          <p class="text-sm text-gray-600">
+            A gripping sci-fi thriller about AI, ethics, and humanity. Set in 2090.
+          </p>
+          <button class="btn btn-sm btn-primary">Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Nav Buttons -->
+  <div class="flex justify-center gap-2 py-3">
+    <a href="#item1" class="btn btn-xs">1</a>
+    <a href="#item2" class="btn btn-xs">2</a>
+    <a href="#item3" class="btn btn-xs">3</a>
+    <a href="#item4" class="btn btn-xs">4</a>
+  </div>
+</div>
+</div>
+<!-- end carusol -->
+
 
 
   <!-- top book  Section -->
@@ -99,6 +155,23 @@
       </a>
     </div>
   </section>
+
+
+
+  <!-- Islamic book  Section -->
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-bold text-center mb-6">Islamic Book</h2>
+    <div id="islamicGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
+
+    <div class="text-center mt-8">
+      <a href="/book-shop/allt_top_book.html">
+        <button class="btn btn-outline  ">See More </button>
+      </a>
+    </div>
+  </section>
+
+
 
   <!-- Manga Section -->
   <section class="max-w-7xl mx-auto px-4 py-8">

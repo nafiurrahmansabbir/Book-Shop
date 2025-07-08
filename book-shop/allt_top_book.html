@@ -14,52 +14,52 @@
 
 
 <body class="bg-gray-100">
-    <!-- Nav-Bar Section -->
-    <nav class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-blue-600">📚 BookNest</span>
-                </div>
-
-                <!-- Navigation Links -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
-                </div>
-
-                <!-- Cart & Mobile Menu -->
-                <div class="flex items-center space-x-4">
-                    <button class="relative text-gray-600 hover:text-blue-600">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.6 8m10.6-8l1.6 8M9 21h6" />
-                        </svg>
-                        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">2</span>
-                    </button>
-                    <button id="menu-btn" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  <!-- Nav-Bar Section -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-blue-600">📚 BookNest</span>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
-            <a href="index.html" class="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
-            <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Shop</a>
-            <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Categories</a>
-            <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">About</a>
-            <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        <!-- Navigation Links -->
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="allmanga.html" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
+          <a href="categories.html" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
         </div>
-    </nav>
+
+        <!-- Cart & Mobile Menu -->
+        <div class="flex items-center space-x-4">
+          <button class="relative text-gray-600 hover:text-blue-600">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.6 8m10.6-8l1.6 8M9 21h6" />
+            </svg>
+            <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">2</span>
+          </button>
+          <button id="menu-btn" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="index.html" class="block text-gray-700 hover:text-blue-600 font-medium">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Shop</a>
+      <a href="categories.html" class="block text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+      <a href="about.html" class="block text-gray-700 hover:text-blue-600 font-medium">About</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+    </div>
+  </nav>
+  <!-- end nav -->
 
     <!-- all manga categories cards show -->
     <section class="max-w-7xl mx-auto px-4 py-8">
@@ -73,29 +73,29 @@
 </body>
 
 <script>
-    fetch('./public/allbooks.json')
-        .then(response => {
-            if (!response.ok) throw new Error("Failed to load JSON");
-            return response.json();
-        })
-        .then(data => {
+  fetch('./public/allbooks.json')
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to load JSON");
+      return response.json();
+    })
+    .then(data => {
+      const container = document.getElementById('allmangaGridshow');
+      const topBooks = data.filter(book => book.category === "topBook");
 
-            const container = document.getElementById('allmangaGridshow');
-            container.innerHTML = data.map(manga => `
-      <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
-        <img src="${manga.image}" alt="${manga.title}" class="h-48 object-contain mb-4" />
-        <h3 class="font-semibold text-lg">${manga.title}</h3>
-        <p class="text-sm text-gray-500">By ${manga.author}</p>
-        <p class="mt-2 text-sm">${manga.description}</p>
-        <div class="mt-auto flex justify-between items-center pt-4">
-          <span class="text-blue-600 font-bold">${manga.price}</span>
-          <a href="details.html?id=${manga.id}" class="btn btn-sm btn-primary">Details</a>
-
+      container.innerHTML = topBooks.map(manga => `
+        <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+          <img src="${manga.image}" alt="${manga.title}" class="h-48 object-contain mb-4" />
+          <h3 class="font-semibold text-lg">${manga.title}</h3>
+          <p class="text-sm text-gray-500">By ${manga.author}</p>
+          <p class="mt-2 text-sm">${manga.description}</p>
+          <div class="mt-auto flex justify-between items-center pt-4">
+            <span class="text-blue-600 font-bold">${manga.price}</span>
+            <a href="details.html?id=${manga.id}" class="btn btn-sm btn-primary">Details</a>
+          </div>
         </div>
-      </div>
-    `).join('');
-        })
-        .catch(error => console.error('Error:', error));
+      `).join('');
+    })
+    .catch(error => console.error('Error:', error));
 </script>
 
 
