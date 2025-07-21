@@ -12,24 +12,32 @@
 <body class="bg-gray-100">
 
   <!-- Nav-Bar Section -->
-  <nav class="bg-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16 items-center">
-        <!-- Logo -->
-        <div class="flex items-center">
-          <span class="text-2xl font-bold text-blue-600">📚 BookNest</span>
-        </div>
+ <nav class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">📚 BookNest</a>
+      </div>
 
-        <!-- Navigation Links -->
-        <div class="hidden md:flex space-x-8">
-          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
-          <a href="allmanga.html" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
-          <a href="categories.html" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
-          <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium">Blog</a>
-          <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
-        </div>
-  </nav>
+      <!-- Navigation Links -->
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="allmanga.html" class="text-gray-700 hover:text-blue-600 font-medium">Shop</a>
+        <a href="categories.html" class="text-gray-700 hover:text-blue-600 font-medium">Categories</a>
+        <a href="blog.html" class="text-gray-700 hover:text-blue-600 font-medium">Blog</a>
+        <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+
+      <!-- Login Button -->
+      <div class="hidden md:block">
+        <a href="login.html" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md font-medium">Login</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
   <!-- end nav -->
 
 
@@ -58,22 +66,24 @@
   </section>
 
 
-
-    <!-- subscribe -->
-  <section class="my-10 py-12">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-4xl font-semibold mb-2">Join Our BookNest</h2>
-      <p class="text-gray-600 mb-6">
-        Signup to be the first to hear about exclusive deals, special offers and upcoming collections
-      </p>
-
-      <form class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <input type="email" placeholder="Enter email for weekly newsletter."
-          class="border border-gray-400 px-4 py-3 w-full sm:w-[400px] focus:outline-none focus:ring-2 focus:ring-black" />
-        <button type="submit" class="bg-black text-white px-6 py-3 font-semibold hover:bg-gray-800 transition">
-          Subscribe
-        </button>
-      </form>
+  <!-- Feature Section -->
+  <section class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">✨ Why BookNest?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-purple-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-purple-600 mb-2">Huge Collection</h3>
+          <p class="text-gray-600">Thousands of titles from all genres — always something new to discover.</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-purple-600 mb-2">Cute & User-Friendly UI</h3>
+          <p class="text-gray-600">Designed with love for a cozy reading and shopping experience.</p>
+        </div>
+        <div class="bg-purple-50 p-6 rounded-lg shadow hover:shadow-md transition">
+          <h3 class="text-xl font-semibold text-purple-600 mb-2">Fast Delivery</h3>
+          <p class="text-gray-600">Get your favorite books delivered to your doorstep in no time!</p>
+        </div>
+      </div>
     </div>
   </section>
 
